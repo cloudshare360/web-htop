@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web htop</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Web htop</h1>
+    </header>
+    <main>
+        <section id="system-stats">
+            <h2>System Information</h2>
+            <div id="stats-container">
+                <div id="cpu-usage">CPU: Loading...</div>
+                <div id="memory-usage">Memory: Loading...</div>
+                <div id="load-average">Load: Loading...</div>
+            </div>
+            <div id="error-message" class="error"></div>
+        </section>
+        
+        <section id="cpu-cores">
+            <h2>CPU Information</h2>
+            <div id="cpu-summary"></div>
+            <div id="cores-container"></div>
+        </section>
+        
+        <section id="memory-details">
+            <h2>Memory Details</h2>
+            <div id="memory-breakdown"></div>
+        </section>
+        
+        <section id="processes">
+            <h2>Processes</h2>
+            <div id="table-container"></div>
+        </section>
+    </main>
+    <script src="scripts/main.js"></script>
+</body>
+</html>

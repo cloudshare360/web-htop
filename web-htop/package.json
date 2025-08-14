@@ -1,0 +1,66 @@
+{
+  "name": "web-htop-monitor",
+  "version": "1.0.0",
+  "description": "Web-based system monitoring tool with real-time CPU, memory, and process tracking - a modern htop alternative for the browser",
+  "main": "dist/server/app.js",
+  "bin": {
+    "web-htop": "bin/web-htop.js"
+  },
+  "scripts": {
+    "start": "node dist/server/app.js",
+    "build": "tsc",
+    "dev": "ts-node-dev src/server/app.ts",
+    "prepare": "npm run build",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "typescript": "^4.5.4"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.19",
+    "@types/express": "^4.17.13",
+    "@types/node": "^16.11.7",
+    "ts-node": "^10.4.0",
+    "ts-node-dev": "^1.1.8"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cloudshare360/web-htop.git"
+  },
+  "keywords": [
+    "system-monitor",
+    "htop",
+    "cpu-monitor",
+    "memory-monitor", 
+    "process-monitor",
+    "linux",
+    "web-dashboard",
+    "real-time",
+    "performance",
+    "monitoring",
+    "nodejs",
+    "typescript",
+    "express"
+  ],
+  "author": "CloudShare360 <contact@cloudshare360.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cloudshare360/web-htop/issues"
+  },
+  "homepage": "https://github.com/cloudshare360/web-htop#readme",
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "os": ["linux", "darwin"],
+  "files": [
+    "dist/",
+    "src/client/",
+    "public/",
+    "bin/",
+    "README.md",
+    "LICENSE"
+  ]
+}
